@@ -1,11 +1,12 @@
 """One Line to Stop the Scroll: one line that stops a stranger mid-scroll.
 
-The entry is a single line, 114 characters, inside the 1-200 character
+The entry is a single line, 133 characters, inside the 1-200 character
 gate. It works on the feed itself: concrete scroll contents in threes
 (47 ads, 12 arguments, one smug cat), then the twist in the last clause
-- the one line that stopped the reader is not selling anything. It
-sounds like a person talking to the scroller, not an ad, and it is worth
-repeating because everyone recognises their own feed in it.
+- the one line that stopped the reader is the only one not selling
+anything, which is exactly why it stopped them. It sounds like a person
+talking to the scroller, not an ad, and it is worth repeating because
+everyone recognises their own feed in it.
 
 The program writes it to $MAKEFUN_OUTPUT_DIR/entry.txt with no trailing
 newline and asserts the gate before writing.
@@ -14,7 +15,7 @@ newline and asserts the gate before writing.
 import os
 
 
-LINE = "You've scrolled past 47 ads, 12 arguments, and one smug cat. This line stopped you \u2014 and it isn't selling a thing."
+LINE = "You've scrolled past 47 ads, 12 arguments, and one smug cat \u2014 and the line that stopped you is the only one not selling you anything."
 
 
 def main() -> None:
